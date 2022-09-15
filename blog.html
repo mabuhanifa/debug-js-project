@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="blog">
+      <h4>
+        Q1: What is the main difference between localStorage and sessionStorage?
+      </h4>
+      <p>
+        Answer: The difference between localStorage and sessionStorage has to do
+        with lifetime and scope: how long the data is saved for and who the data
+        is accessible to. Session storage is destroyed once the user closes the
+        browser whereas, Local storage stores data with no expiration date.
+        while data in localStorage doesn't expire, data in sessionStorage is
+        cleared when the page session ends.
+      </p>
+      <h4>Q2: What's the difference between Global Scope and Block Scope?</h4>
+      <p>
+        Variables declared outside of all functions are known as global
+        variables and in the global scope. Global variables are accessible
+        anywhere in the program. Whereas Block Scope is variable that is
+        declared inside a specific block & can’t be accessed outside of that
+        block. In order to access the variables of that specific block, we need
+        to create object for it.
+      </p>
+      <h4>Q3: How does Event Loop work in JS?</h4>
+      <p>
+        How does the event loop work in node JS?Event loop is an endless loop,
+        which waits for tasks, executes them and then sleeps until it receives
+        more tasks. The event loop executes tasks from the event queue only when
+        the call stack is empty i.e. there is no ongoing task. The Event Loop
+        has one simple job — to monitor the Call Stack and the Callback Queue.
+        If the Call Stack is empty, the Event Loop will take the first event
+        from the queue and will push it to the Call Stack, which effectively
+        runs it.
+      </p>
+      <h4>Q4: In how many ways can we get 'undefined' in JS?</h4>
+      <p>
+        An undefined value means lack of value. A variable or an object has an
+        undefined value when no value is assigned before using it. undefined is
+        a property of the global object. That is, it is a variable in global
+        scope. The initial value of undefined is the primitive value undefined.
+        Examples: Strict equality and undefined, typeof operator and undefined,
+        void operator and undefined.
+      </p>
+    </div>
+  </body>
+</html>

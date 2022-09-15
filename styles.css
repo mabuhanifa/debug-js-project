@@ -17,8 +17,10 @@ body {
 }
 .blog {
   width: 70%;
-  margin: 250px auto;
+  margin: 50px auto;
+  margin-top: 250px;
   color: white;
+  font-size: 20px;
 }
 .blog h4 {
   margin: 25px 0;
