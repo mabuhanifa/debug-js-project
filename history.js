@@ -26,6 +26,8 @@ function displayHistory() {
   const previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
 
   previousTests.forEach((test) => {
+    const words = test.questionText.split(" ");
+    const wpm = ((words.length / test.timeTaken) * 60).toFixed();
     const newRow = document.createElement("div");
     newRow.classList.add("card");
 
@@ -33,6 +35,7 @@ function displayHistory() {
   <h3>${test.questionText}</h3>
   <p>You took: <span class="bold">${test.timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+    <p>You typing speed is <span class="bold">${wpm}</span> WPM </p>
   `;
 
     histories.appendChild(newRow);
